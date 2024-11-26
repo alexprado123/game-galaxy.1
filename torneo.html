@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME-GALAXY - Torneos</title>
+  <link rel="stylesheet" href="./torneo.css">
+</head>
+<body>
+  <header class="header">
+    <h1>GAME-GALAXY</h1>
+    <p>Crea y únete a torneos espaciales</p>
+  </header>
+
+  <main>
+    <!-- Formulario para crear torneos -->
+    <section class="create-tournament">
+      <h2>Crear Torneo</h2>
+      <form id="tournament-form">
+        <label for="tournament-name">Nombre del Torneo:</label>
+        <input type="text" id="tournament-name" required>
+        
+        <label for="game-type">Tipo de Juego:</label>
+        <input type="text" id="game-type" required>
+        
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" required>
+        
+        <label for="max-players">Máximo de Jugadores:</label>
+        <input type="number" id="max-players" min="2" required>
+        
+        <button type="submit">Crear Torneo</button>
+      </form>
+    </section>
+
+    <!-- Lista de torneos -->
+    <section class="tournament-list">
+      <h2>Torneos Disponibles</h2>
+      <ul id="tournaments">
+        <!-- Los torneos se agregarán dinámicamente aquí -->
+      </ul>
+    </section>
+
+    <!-- Modal para inscripción -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Inscripción al Torneo</h2>
+      <form id="inscription-form">
+        <label for="user-name">Nombre:</label>
+        <input type="text" id="user-name" required>
+  
+        <label for="user-age">Edad:</label>
+        <input type="number" id="user-age" min="1" required>
+  
+        <label for="user-email">Correo Electrónico:</label>
+        <input type="email" id="user-email" required>
+  
+        <label for="user-phone">Número Telefónico:</label>
+        <input type="tel" id="user-phone" required>
+  
+        <button type="submit">Confirmar Inscripción</button>
+        <button type="button" id="cancel">Cancelar</button>
+      </form>
+    </div>
+  </div>  
+  </main>
+
+  <script src="./torneo.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Estilo Espacial</title>
+    <link rel="stylesheet" href="newCarrito.css">
+</head>
+<body>
+
+    <h1>Catálogo de Productos</h1>
+
+        <button class="toggle-cart" onclick="toggleCart()">🛒</button>
+
+        <div class="cart" id="cart">
+            <h2>Carrito de Compras</h2>
+                <div id="cart-items">
+                    <!-- Los productos en el carrito se generarán dinámicamente con JavaScript -->
+                </div>
+            <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+            <a href="login.html"><button onclick="completePurchase()">Comprar</button></a>
+        </div>
+
+    <div id="product-list">
+        <!-- Los productos se generarán dinámicamente con JavaScript -->
+    </div>
+    <script src="newCatalogo.js"></script>
+</body>
+</html>
